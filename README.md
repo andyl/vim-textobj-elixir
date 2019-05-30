@@ -4,12 +4,36 @@ This Vim plugin makes text objects with various elixir block structures.
 Many end-terminated blocks are parsed using regex, indentation and syntax
 highlight.  This is more correct than parsing text with regex only.
 
-## Simple one operator-pending mapping `e`
+## Configuration
 
-Elixir text objects include: 'setup_all', 'setup', 'describe', 'test',
-'unless', 'quote', 'case', 'cond', 'when', 'with', 'for', 'if',
-'defprotocol', 'defmodule', 'defmacro', 'defmacrop', 'defimpl', 'defp',
-'def'.
+By default this motion is mapped to 'e'.  The key mapping can be overridden by adding a line similar to this to your vimrc:
+
+```vim
+let g:vim_textobj_elixir_mapping = 'e'
+```
+
+## Usage
+
+Elixir text objects include:
+- `case`
+- `cond`
+- `def`
+- `defimpl`
+- `defmacro`
+- `defmacrop`
+- `defmodule`
+- `defp`
+- `defprotocol`
+- `describe`
+- `for`
+- `if`
+- `quote`
+- `setup`
+- `setup_all`
+- `test`
+- `unless`
+- `when`
+- `with`
 
 Example:
 
