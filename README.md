@@ -1,4 +1,4 @@
-# Make text objects with various elixir block structures
+# Vim text objects for elixir block structures
 
 This Vim plugin makes text objects with various elixir block structures.
 Many end-terminated blocks are parsed using regex, indentation and syntax
